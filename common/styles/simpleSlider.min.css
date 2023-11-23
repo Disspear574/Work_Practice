@@ -48,13 +48,13 @@
 }
 .simple-slider .slider-btn.slider-btn-prev {
 	left: 20%;
-	background-image: url(/common/img/prev.png);
+	background-image: url(../img/prev.png);
 	background-size: 60px 150px;
 	background-position: left;
 }
 .simple-slider .slider-btn.slider-btn-next {
 	right: 20%;
-	background-image: url(/common/img/next.png);
+	background-image: url(../img/next.png);
 	background-size: 60px 150px;
 	background-position: right;
 }
