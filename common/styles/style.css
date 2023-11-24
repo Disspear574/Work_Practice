@@ -13,12 +13,43 @@
 	--background-color: rgba(164, 207, 184, 0.9);
 	--footer-bg-gradient-color: rgba(22, 109, 68, 0.6);
 }
-
+/* Global */
+html {
+	scroll-behavior: smooth;
+}
 body {
 	color: var(--text-color);
 	font-family: 'Open Sans', monospace;
-	scroll-behavior: smooth;
+
 	/* position: relative; */
+}
+a:hover {
+	color: var(--accent-color);
+}
+input {
+	accent-color: var(--accent-color);
+}
+/* Titles */
+.catalog-title,
+.benefit-title,
+.why-title,
+.form-title {
+	text-align: center;
+	transform: translateY(100px);
+}
+.catalog-title {
+	font-size: 300px;
+}
+.benefit-title {
+	font-size: 150px;
+}
+.why-title {
+	font-size: 100px;
+}
+.form-title {
+	max-width: 51%;
+	margin: 0 auto;
+	font-size: 87px;
 }
 .container_asda {
 	height: 1080px;
@@ -34,9 +65,7 @@ body {
 	position: absolute;
 	z-index: -4;
 }
-input {
-	accent-color: var(--accent-color);
-}
+/* Header */
 .header {
 	position: fixed;
 	top: 0px;
@@ -53,10 +82,13 @@ input {
 .logo {
 	transition: all 0.5s;
 }
+.logo:hover {
+	transform: scale(1.2);
+}
 .header-shrink {
 	background: var(--background-color);
 	box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.2);
-	backdrop-filter: blur(17px);
+	backdrop-filter: blur(7.5px);
 	-webkit-backdrop-filter: blur(17px);
 	height: 50px;
 	transition: all 0.5s;
@@ -65,17 +97,14 @@ input {
 	display: none;
 }
 .header-shrink > .logo {
-	transition: all 0.5s;
 	height: 30px;
 }
 .header-shrink > .btns_header > .btn {
-	transition: all 0.5s;
 	height: 40px;
 	padding: 5px;
 }
 .immunity_header {
 	display: flex;
-	transition: all 0.5s;
 	flex-direction: column;
 	align-self: self-start;
 	padding-top: 30px;
@@ -90,9 +119,17 @@ input {
 	border: rgba(255, 255, 255, 0.443) 3px solid;
 	backdrop-filter: blur(7px);
 	-webkit-backdrop-filter: blur(7px);
-
+	cursor: pointer;
 	border-radius: 50px;
-	color: black;
+	transition: all 0.5s;
+}
+.btn:hover {
+	transform: scale(1.1);
+	color: var(--secondary-color);
+	background-color: #166d44;
+}
+.btn:active {
+	transform: scale(0.7);
 }
 .btn-catalog {
 	backdrop-filter: blur(7px);
@@ -109,16 +146,19 @@ input {
 	position: absolute;
 }
 .aa {
+	animation: aa 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	height: 35%;
 	z-index: -3;
 	top: 15%;
 }
 .aaa {
+	animation: aaa 0.7s ease-out;
 	height: 70%;
 	top: 35%;
 	z-index: -2;
 }
 .aaaa {
+	animation: aaaa 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	height: 35%;
 	z-index: -1;
 	top: 65%;
@@ -150,38 +190,30 @@ input {
 	width: 500px;
 	right: 10%;
 }
-.container {
-	/* height: 1080px; */
-}
 .why {
 	padding-top: 100px;
-	color: black;
 	top: 110%;
 	justify-content: center;
 }
-.why > h1 {
-	/* margin-top: 100px; */
-	text-align: center;
-	font-size: 100px;
-}
-.why > div {
+.why-list {
+	transform: scale(0);
 	justify-content: center;
 	display: flex;
 	gap: 70px;
+	margin-top: 40px;
 }
-.why > div > p {
+.why-list > p {
 	font-size: 20px;
 	max-width: 20%;
 }
 .asdaa {
-	color: black;
 	margin-top: 700px;
-	margin-left: 250px;
+	margin-left: 15%;
 }
 .asdaaa {
-	color: black;
 	float: right;
 	margin-top: 210px;
+	max-width: 40%;
 }
 .asdaa > h1 {
 	font-size: 200px;
@@ -220,12 +252,6 @@ input {
 .benefit {
 	height: 540px;
 }
-.benefit-title {
-	font-size: 150px;
-	text-align: center;
-	color: black;
-	z-index: -1000;
-}
 .benefit-flex {
 	margin-top: 20px;
 	display: flex;
@@ -234,11 +260,11 @@ input {
 }
 .benefit-flex-element {
 	padding: 20px;
-	height: 330px;
-	color: black;
+	min-height: 330px;
 	background-color: var(--secondary-color);
 	width: 16%;
 	border-radius: 15px;
+	transform: scale(0);
 }
 .benefit-flex-title {
 	font-size: 25px;
@@ -247,23 +273,16 @@ input {
 	margin-top: 20px;
 	font-size: 20px;
 }
-.catalog-title {
-	font-size: 300px;
-	color: black;
-	text-align: center;
-}
-
 /* Catalog */
 .catalog-element {
 	width: 50%;
 	margin: 0 auto;
 	background: var(--background-color);
-	backdrop-filter: blur(17px);
-	-webkit-backdrop-filter: blur(17px);
 	height: 600px;
 	border-radius: 40px;
 	display: flex;
 	align-items: center;
+	transform: scale(0);
 }
 .catalog-element-item {
 	flex: 60%;
@@ -293,12 +312,8 @@ input {
 	text-align: left;
 }
 /* Form */
-.form-title {
-	max-width: 35%;
-	text-align: center;
-	margin: 0 auto;
-	font-size: 70px;
-	color: black;
+.container_form {
+	margin-top: 50px;
 }
 .form {
 	background: var(--secondary-color);
@@ -310,14 +325,33 @@ input {
 	display: flex;
 	flex-direction: column;
 	gap: 50px;
+	transform: scale(0);
 }
 .form > input {
 	padding: 2px;
 	border-bottom: black 1px solid;
 }
+.check > input {
+	margin-right: 10px;
+	align-self: center;
+}
+.form_bottom {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 1fr 0.3fr;
+	grid-template-rows: 1fr 1fr;
+}
 .btn-form {
-	align-self: end;
+	grid-area: 1/2/3/2;
+	height: 50px;
 	z-index: 1;
+	align-self: center;
+	justify-self: center;
+}
+.form-link-policy {
+	color: #166d44;
+	transition: all 0.5s;
+	cursor: pointer;
 }
 .main {
 	margin-bottom: 40px;
@@ -329,12 +363,79 @@ input {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+	transform: translateY(50px);
 }
 .footer-container {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
 	padding-top: 70px;
-	color: black;
 	font-size: 25px;
+}
+.footer-container-links {
+	transition: all 0.5s;
+}
+.footer-container-links:active {
+	color: var(--secondary-color);
+}
+/* Animation */
+
+.asdaa,
+.asdaaa {
+	transform: translateY(400px);
+}
+.reveal {
+	opacity: 0;
+	transition: all 1s;
+}
+.reveal.active {
+	opacity: 1;
+	transition: all 1s;
+	transform: none;
+}
+.slider-btn-next.reveal.active {
+	right: 17%;
+	opacity: 1;
+}
+.slider-btn-prev.reveal.active {
+	left: 17%;
+	opacity: 1;
+}
+@keyframes aa {
+	0% {
+		transform: translateX(-1000px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+@keyframes aaa {
+	0% {
+		transform: translateY(-1000px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+@keyframes aaaa {
+	0% {
+		transform: translateX(1000px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+.slider-btn:hover {
+	transform: scale(1.5);
+}
+.slider-btn:active {
+	filter: invert(0);
+	background: #000;
+	transform: scale(0.7);
 }

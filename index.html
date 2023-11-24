@@ -7,19 +7,17 @@
 	<meta name="theme-color" media="(prefers-color-scheme: light)" content="rgb(164, 207, 184)" />
 	<meta name="theme-color" media="(prefers-color-scheme: dark)" content="rgb(82, 103, 92)" />
 	<link rel="stylesheet" href="common/styles/reset.css">
+	<link rel="stylesheet" href="common/styles/simpleSlider.min.css">
 	<link rel="stylesheet" href="common/styles/style.css">
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="common/scripts/script.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-	<link rel="stylesheet" href="common/styles/simpleSlider.min.css">
 	<script src="common/scripts/simpleSlider.min.js"></script>
 	<title>Apteka</title>
 </head>
 
 <body>
 	<header class="header">
-		<img class="logo" src="common/img/logo-text.png" alt="logo">
+		<a class="logo" href="#"><img src="common/img/logo-text.png" alt="logo"></a>
 		<div class="immunity_header">
 			<p class="immunity_header-text">Новый уровень</p>
 			<p class="immunity_header-text">Укрепление иммунитета</p>
@@ -27,15 +25,15 @@
 
 		</div>
 		<div class="btns_header">
-			<button class="btn btn-catalog">Каталог</button>
-			<button class="btn">Купить</button>
+			<button class="btn btn-catalog" onclick="window.location.href='#catalog'">Каталог</button>
+			<button class="btn" onclick="window.location.href='#buy'">Купить</button>
 		</div>
 		</div>
 
 	</header>
 
 	<main class="main">
-		<div class="container container_asda">
+		<section class="container container_asda">
 			<div class="asda">
 				<img class="asaa aa" src="common/img/vital-text.png" alt="">
 				<img class="asaa aaa" src="common/img/vitalcore-image.png" alt="">
@@ -50,60 +48,60 @@
 				<p class="bottom_container_for-title">Для Работоспособности</p>
 				<p>Биодобавка может поддерживать организм во время болезни, повышать его сопротивляемость, придавать силы.</p>
 			</div>
-		</div>
+		</section>
 		<!-- Why Choose -->
-		<div class="container container_why">
+		<section class="container container_why">
 			<div class="why">
-				<h1>Почему выбирают Vital Core</h1>
-				<div>
+				<h1 class="why-title reveal">Почему выбирают Vital Core</h1>
+				<div class="why-list reveal">
 					<p>1. Выступают дополнительными источниками жиров, белков и углеводов.</p>
 					<p>2. Активизирует пищеварительные процессы.</p>
 					<p>3. Выводит из организма вредные вещества.</p>
 				</div>
 			</div>
-			<div class="asdaa">
+			<div class="asdaa reveal">
 				<h1>C,A,D+</h1>
 				<p>Витаминно-минеральный комплекс, содержит 21 компонент для поддержания здоровья и укрепления всего организма.
 				</p>
 			</div>
-			<div class="asdaaa">
+			<div class="asdaaa reveal">
 				<h1>>90%</h1>
 				<p>Населения испытывает дефицит жизненно важного для организма витамина C.
 				</p>
 			</div>
-		</div>
+		</section>
 		<!--benefit  -->
-		<div class="benefit">
-			<h1 class="benefit-title">В чем будет польза</h1>
+		<section class="benefit">
+			<h1 class="benefit-title reveal">В чем будет польза</h1>
 			<div class="benefit-flex">
-				<div class="benefit-flex-element">
+				<div class="benefit-flex-element reveal">
 					<h3 class="benefit-flex-title">Ускоряет метаболизм</h3>
 					<p class="benefit-flex-text">Быстрый метаболизм способствует более быстрому сжиганию калорий, что помогает
 						поддерживать здоровье и вес.</p>
 				</div>
-				<div class="benefit-flex-element">
+				<div class="benefit-flex-element reveal">
 					<h3 class="benefit-flex-title">Укрепляет иммунитет</h3>
 					<p class="benefit-flex-text">Иммунитет необходимо укреплять не только в сезон простуд, а постоянно, не забывая
 						об эмоциональном настрое
 						и по возможности избегая стрессов.</p>
 				</div>
-				<div class="benefit-flex-element">
+				<div class="benefit-flex-element reveal">
 					<h3 class="benefit-flex-title">Повышает работоспособность</h3>
 					<p class="benefit-flex-text">Нейроны принимают и обрабатывают сигналы, проводят их по своим отросткам и
 						взаимодействуют друг с другом.
 					</p>
 				</div>
 			</div>
-		</div>
+		</section>
 		<!-- Catalog -->
-		<div class="container_catalog">
-			<h1 class="catalog-title">Каталог</h1>
+		<section class="container_catalog" id="catalog">
+			<h1 class="catalog-title reveal">Каталог</h1>
 
 			<div class="simple-slider simple-slider-first">
-				<div class="slider-wrapper">
+				<div class="slider-wrapper ">
 					<!-- First slide -->
-					<div class="slider-slide" style="background-image: url('path/to/image')">
-						<div class="catalog-element">
+					<div class="slider-slide ">
+						<div class="catalog-element reveal">
 							<img class="element-img" src="common/img/vitalcore-image.png" alt="">
 							<div class="catalog-element-item">
 								<h1 class="item-title">Vital Core</h1>
@@ -123,8 +121,8 @@
 					</div>
 
 					<!-- Second slide -->
-					<div class="slider-slide" style="background-image: url('path/to/image')">
-						<div class="catalog-element">
+					<div class="slider-slide">
+						<div class="catalog-element reveal">
 							<img class="element-img" src="common/img/vitalcore-image.png" alt="">
 							<div class="catalog-element-item">
 								<h1 class="item-title">Vital Core</h1>
@@ -143,46 +141,79 @@
 						</div>
 					</div>
 				</div>
-				<div class="slider-btn slider-btn-prev"></div>
-				<div class="slider-btn slider-btn-next"></div>
+				<div class="slider-btn slider-btn-prev reveal"></div>
+				<div class="slider-btn slider-btn-next reveal"></div>
 			</div>
-		</div>
+		</section>
 		<!-- Form -->
-		<div class="container_form">
-			<h1 class="form-title">Форма для записи на консультацию</h1>
-			<form class="form" action="POST">
-				<!-- <label for="name">Имя</label> -->
-				<input type="text" name="name" id="name" placeholder="Имя">
-				<!-- <label for="surname">Фамилия</label> -->
-				<input type="text" name="surname" id="surname" placeholder="Фамилия">
-				<!-- <label for="phone">Номер телефона</label> -->
-				<input type="phone" name="phone" id="phone" placeholder="Номер телефона">
-				<!-- <label for="email">E-mail</label> -->
-				<input type="email" name="email" id="email" placeholder="E-mail">
-				<button class="btn btn-form" type="submit">записаться</button>
+		<section class="container_form" id="buy">
+			<h1 class="form-title reveal">Форма для записи на консультацию</h1>
+			<form class="form reveal" action="POST">
+				<input type="text" name="name" id="name" placeholder="Имя" required>
+				<input type="text" name="surname" id="surname" placeholder="Фамилия" required>
+				<input type="phone" name="phone" id="phone" placeholder="Номер телефона" required>
+				<input type="email" name="email" id="email" placeholder="E-mail" required>
+				<div class="form_bottom">
+					<div class="check">
+						<input type="checkbox" name="agree" id="agree" required><label for="agree">Соглашаюсь с <a
+								class="form-link-policy">политикой конфиденциальности, пользовательским соглашением</a> и <a
+								class="form-link-policy">правилами бонусной программы</a></label>
+					</div>
+					<div class="check">
+						<input type="checkbox" name="ad" id="ad"><label for="ad"> Предоставляю <a class="form-link-policy">согласие
+								на получение
+								рекламных новостей, акций и персональных предложений</a></label>
+					</div>
+					<button class="btn btn-form" type="submit">записаться</button>
+				</div>
 			</form>
-		</div>
+		</section>
 	</main>
-	<footer class="footer">
+	<footer class="footer reveal">
 		<div class="footer-container">
-			<p>Для покупателя</p>
-			<p>Оформление заказа</p>
-			<p>Бонусная карта</p>
-			<p>Акции</p>
-			<p>Новинки</p>
-			<p>Статьи</p>
+			<a href="#" class="footer-container-links">
+				<p>Для покупателя</p>
+			</a>
+			<a href="#" class="footer-container-links">
+				<p>Оформление заказа</p>
+			</a>
+			<a href="#" class="footer-container-links">
+				<p>Бонусная карта</p>
+			</a>
+			<a href="#" class="footer-container-links">
+				<p>Акции</p>
+			</a>
+			<a href="#" class="footer-container-links">
+				<p>Новинки</p>
+			</a>
+			<a href="#" class="footer-container-links">
+				<p>Статьи</p>
+			</a>
 		</div>
 		<div class="footer-container">
-			<p>О препарате</p>
-			<p>Единая справочная</p>
-			<p>Найти аптеку</p>
-			<p>О компании</p>
-			<p>Вакансии</p>
-			<p>Новости</p>
+			<a href="" class="footer-container-links">
+				<p>О препарате</p>
+			</a>
+			<a href="#" class="footer-container-links">
+				<p>Единая справочная</p>
+			</a>
+			<a href="#" class="footer-container-links">
+				<p>Найти аптеку</p>
+			</a>
+			<a href="#" class="footer-container-links">
+				<p>О компании</p>
+			</a>
+			<a href="#" class="footer-container-links">
+				<p>Вакансии</p>
+			</a>
+			<a href="#" class="footer-container-links">
+				<p>Новости</p>
+			</a>
 		</div>
 	</footer>
 	<script>
-		new SimpleSlider('.simple-slider-first');
+		new SimpleSlider('.simple-slider-first')
+
 	</script>
 </body>
 
