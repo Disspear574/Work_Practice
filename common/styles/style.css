@@ -181,7 +181,7 @@ input {
 	position: absolute;
 	z-index: -1;
 	color: var(--notfocus-color);
-	margin-top: 1051px;
+	margin-top: 1050px;
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: space-evenly;
