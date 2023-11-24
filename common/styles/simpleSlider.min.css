@@ -50,7 +50,7 @@
 .simple-slider .slider-btn.slider-btn-prev {
 	left: 0%;
 	opacity: 0;
-	background-image: url(/common/img/prev.svg);
+	background-image: url(../img/prev.svg);
 	background-size: contain;
 	background-position: right;
 	background-repeat: no-repeat;
@@ -58,7 +58,7 @@
 .simple-slider .slider-btn.slider-btn-next {
 	right: 0%;
 	opacity: 0;
-	background-image: url(/common/img/next.svg);
+	background-image: url(../img/next.svg);
 	background-size: contain;
 	background-position: left;
 	background-repeat: no-repeat;
