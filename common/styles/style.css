@@ -181,7 +181,7 @@ input {
 	position: absolute;
 	z-index: -1;
 	color: var(--notfocus-color);
-	margin-top: 1000px;
+	margin-top: 1050px;
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: space-evenly;
@@ -511,7 +511,7 @@ input {
 	.bottom_container {
 		flex-direction: column;
 		align-items: center;
-		height: 70px;
+		/* height: 70px; */
 	}
 	.bottom_container_ooo {
 		left: 0;
@@ -595,10 +595,6 @@ input {
 	}
 }
 @media (max-width: 500px) {
-	.bottom_container {
-		margin-top: 930px;
-		height: 140px;
-	}
 	.container_why {
 		height: 1100px;
 	}
