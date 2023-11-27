@@ -505,7 +505,37 @@ input {
 	.header-shrink > .btns_header > .btn {
 		height: 50px;
 	}
+	.plus-element1 {
+		margin-top: 20vh;
+	}
+	.core-core {
+		height: 25vw;
+		top: 50%;
+	}
+	.core-vital {
+		height: 25vw;
+		top: 15%;
+	}
+	.core-image {
+		height: 45vw;
+		top: 25%;
+	}
+	.container_core {
+		height: 100vh;
+	}
+	.container_core::before {
+		height: 100vh;
+	}
+	.bottom_container {
+		margin-top: 95vh;
+	}
 }
+@media (max-width: 740px) {
+	.plus-element2 {
+		margin-top: 15vh;
+	}
+}
+
 @media (max-width: 700px) {
 	.bottom_container {
 		flex-direction: column;
@@ -543,7 +573,7 @@ input {
 		font-size: 4vw;
 	}
 	.plus-element1 {
-		margin-top: 100px;
+		margin-top: 5vh;
 	}
 	.plus-element2 {
 		margin-top: 0px;
@@ -592,6 +622,37 @@ input {
 		padding-bottom: 20px;
 		padding-top: 20px;
 	}
+	.core-image {
+		height: auto;
+		top: 25%;
+	}
+}
+@media (max-width: 680px) {
+	.plus-element2 {
+		margin-top: 10px;
+	}
+}
+@media (max-width: 630px) {
+	.plus-element1 {
+		margin-top: 5vh;
+		margin-left: 20%;
+	}
+	.container_why::before {
+		background-position: right 0 top -2px, left 0 top 300px, left 0 top 500px,
+			right 0 top 820px, right 0 bottom 400px, left 0 bottom 0;
+		background-size: 50%, 30%, 60%, 60%, 35%, 35%;
+	}
+}
+@media (max-width: 550px) {
+	.plus-element1 {
+		margin-top: 10vh;
+		margin-left: 20%;
+	}
+	.container_why::before {
+		background-position: right 0 top -2px, left 0 top 300px, left 0 top 500px,
+			right 0 top 820px, right 0 bottom 400px, left 0 bottom 0;
+		background-size: 50%, 30%, 60%, 60%, 35%, 35%;
+	}
 }
 @media (max-width: 500px) {
 	.container_why {
@@ -599,15 +660,20 @@ input {
 	}
 	.container_why::before {
 		background-size: 50%, 30%, 80%, 80%, 35%, 35%;
-		background-position: right 0 top -2px, left 0 top 300px,
-			left -50px top 430px, right 0 top 700px, right 0 bottom 400px,
-			left 0 bottom 0;
+		background-position: right 0 top -2px, left 0 top 300px, left 0px top 460px,
+			right -20px top 760px, right 0 bottom 400px, left 0 bottom 0;
 		height: 4065px;
-	}
-	.plus-element2 {
-		margin-right: 60px;
+		background-size: 50%, 30%, 65%, 65%, 35%, 35%;
 	}
 	.container_why {
 		height: 1050px;
+	}
+}
+@media (max-width: 433px) {
+	.container_why::before {
+		background-position: right 0 top -2px, left 0 top 300px,
+			left -20px top 430px, right -30px top 740px, right 0 bottom 400px,
+			left 0 bottom 0;
+		background-size: 50%, 30%, 80%, 80%, 35%, 35%;
 	}
 }
